@@ -1,42 +1,95 @@
+# =========================
+# Maven / Build
+# =========================
 target/
-!.mvn/wrapper/maven-wrapper.jar
+!/.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-.kotlin
 
-### IntelliJ IDEA ###
-.idea
-.idea/modules.xml
-.idea/misc.xml
-.idea/vcs.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
-*.iws
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+*.log
+*.class
+*.jar
+*.war
+
+# =========================
+# Kotlin (if used)
+# =========================
+.kotlin/
+
+# =========================
+# IntelliJ IDEA
+# =========================
+.idea/
 *.iml
 *.ipr
+*.iws
 
-### Eclipse ###
-.apt_generated
+# Optional (if you want partial tracking instead of full ignore)
+# .idea/modules.xml
+# .idea/misc.xml
+# .idea/vcs.xml
+# .idea/compiler.xml
+
+# =========================
+# Eclipse
+# =========================
+.apt_generated/
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
-.sts4-cache
+.sts4-cache/
 
-### NetBeans ###
+# =========================
+# NetBeans
+# =========================
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
+# =========================
+# VS Code
+# =========================
 .vscode/
 
-### Mac OS ###
+# =========================
+# macOS
+# =========================
 .DS_Store
+
+# =========================
+# Security / Sensitive
+# =========================
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.jks
+
+# =========================
+# Test Reports / Logs
+# =========================
+allure-results/
+allure-report/
+test-output/
+reports/
+
+# =========================
+# Docker
+# =========================
+*.tar
+*.gz
+
+# =========================
+# Misc
+# =========================
+*.tmp
+*.swp
