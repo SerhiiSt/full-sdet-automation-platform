@@ -24,3 +24,9 @@ End-to-end automation framework combining UI, API, and BDD testing.
 ## ▶️ Run Tests
 ```bash
 mvn clean install
+```
+## Run Tagged Test
+```bash
+mvn test -Dgroups=smoke
+mvn test -Dgroups=regression
+```
