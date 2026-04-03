@@ -28,4 +28,19 @@ public class UserClient {
                 .when()
                 .post("/users");
     }
+
+    public Response updateUser(int id, String body) {
+        return given()
+                .spec(ApiSpec.getRequestSpec())
+                .body(body)
+                .when()
+                .put("/users/" + id);
+    }
+
+    public Response deleteUser(int id) {
+        return given()
+                .spec(ApiSpec.getRequestSpec())
+                .when()
+                .delete("/users/" + id);
+    }
 }
